@@ -1,0 +1,34 @@
+[
+  {
+    "name": "John Doe",
+    "address": "City"
+  },
+  {
+    "name": "Jane Smith",
+    "address": "Town"
+  },
+  {
+    "name": "Alice Johnson",
+    "address": "Village"
+  },
+  {
+    "name": "Michael Brown",
+    "address": "Suburb"
+  },
+  {
+    "name": "Emily Davis",
+    "address": "Hamlet"
+  },
+  {
+    "name": "David Wilson",
+    "address": "Rural"
+  },
+  {
+    "name": "Sarah Taylor",
+    "address": "Countryside"
+  },
+  {
+    "name": "James Anderson",
+    "address": "District"
+  }
+]
