@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import com.sugam.myapplication11.Adapter.ListAdapter2
 import com.sugam.myapplication11.Adapter.User
 import com.sugam.myapplication11.Adapter.ValuesAdapter
 import com.sugam.myapplication11.R
@@ -26,7 +27,7 @@ class Homefragmentf : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentHomefragmentfBinding.inflate(inflater, container, false)
+        binding = FragmentHomefragmentfBinding.inflate(layoutInflater, container, false)
         array = arrayListOf()
         var arrayList = arrayListOf<Int>(
             R.drawable.a1,
@@ -67,9 +68,14 @@ class Homefragmentf : Fragment() {
             StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.HORIZONTAL)
         binding.RecyclerView1.adapter = adapter
 
+
+        val newarray=array.reversed().toMutableList() as ArrayList<User>
+
+        val adapter2 = ListAdapter2(requireContext(), newarray)
         binding.RecyclerView2.layoutManager =
             StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.HORIZONTAL)
-        binding.RecyclerView2.adapter = adapter
+
+        binding.RecyclerView2.adapter = adapter2
 
         return binding.root
 
