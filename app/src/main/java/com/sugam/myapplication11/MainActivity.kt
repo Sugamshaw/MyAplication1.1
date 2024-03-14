@@ -39,8 +39,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.button.setOnClickListener {
-            startActivity(Intent(this, HomeActivity::class.java))
-            finish()
+
 
             if (sharedPreferences.getString(
                     "Email",
