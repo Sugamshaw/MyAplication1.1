@@ -11,6 +11,11 @@
         tools:layout="@layout/fragment_homefragmentf" >
 
     </fragment>
+    <fragment
+        android:id="@+id/search"
+        android:name="com.sugam.myapplication11.Fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
 
     <fragment
         android:id="@+id/profile"

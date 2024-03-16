@@ -26,4 +26,6 @@ class ListAdapter2(var content:Context,var arrayList: ArrayList<User>):RecyclerV
     }
 
 
+
+
 }
